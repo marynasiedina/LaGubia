@@ -1,0 +1,21 @@
+@import "../../../../scss/variables";
+@import "../../../../scss/mixins";
+
+.navigation__item {
+  margin: 20px 40px;
+  align-self: center;
+  font-family: $Mont;
+  
+}
+
+.navigation__link {
+  text-decoration: none;
+  font-weight: 600;
+  color: $grey;
+  transition: 0.9s;
+  cursor: pointer;
+
+  &:hover {
+    color: $lightGrey;
+  }
+}

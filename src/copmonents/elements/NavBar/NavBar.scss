@@ -1,0 +1,44 @@
+@import "../../../scss/variables";
+@import "../../../scss/mixins";
+
+
+.logo-img {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 40px;
+  display: block;
+  width: 110px;
+  height: 110px;
+  transition: all .9s;
+}
+
+#logo {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 10;
+  transition: all .9s;
+
+  &-bar {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+  }
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
