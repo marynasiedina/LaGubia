@@ -2,25 +2,50 @@
 @import "../../../scss/mixins";
 
 .we-are {
-  position: relative;
-  top: -125px;
+  height: 100vh;
+  position: relative;}
+
+
+.section {
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+  background: url('../../../images/BGWeAre1.jpg') top right no-repeat;
+  
 }
+
 .header {
   width: 100%;
   height: 100vh;
-  background: url('../../../images/BG.png') top left no-repeat;
+  background: url('../../../images/BGWeAreMain.png') top left no-repeat;
   background-size: 100% 100%;
   
   & .main-title {
     padding-top: 350px;
     font-family: $Mont;
     font-size: 75px;
-    font-weight: 700;
+    font-weight: 800;
     color: #ffffff;
     text-align: center;
     text-transform: uppercase;
     transition: all 2s ease-in-out;
     
   }
-  
+}
+
+.title {
+  padding-top: 150px;
+  padding-bottom: 20px;
+  font-family: $Mont;
+  font-weight: 500;
+  font-size: 50px;
+  color: $lightGrey;
+}
+
+.section__description {
+  font-family: $Mont;
+  font-size: 15px;
+  color: $lightGrey;
+  max-width: 500px;
+  line-height: 1.3;
 }

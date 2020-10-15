@@ -2,20 +2,22 @@
 @import "../../../../scss/mixins";
 
 .navigation__item {
-  margin: 20px 40px;
+  
   align-self: center;
   font-family: $Mont;
   
 }
 
-.navigation__link {
+.navigation__link, .navigation__link--mod {
+  padding: 0 40px;
+  display: inline-block;
+  width: inherit;
+  height: inherit;
   text-decoration: none;
   font-weight: 600;
+  font-size: 16px;
   color: $grey;
   transition: 0.9s;
   cursor: pointer;
 
-  &:hover {
-    color: $lightGrey;
-  }
 }

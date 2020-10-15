@@ -3,12 +3,9 @@
 
 
 .logo-img {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-right: 40px;
   display: block;
-  width: 110px;
-  height: 110px;
+  width: 60px;
+  height: 60px;
   transition: all .9s;
 }
 
@@ -18,25 +15,40 @@
 }
 
 .navigation {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
-  background: transparent;
-  height: 125px;
+  height: 60px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
   z-index: 10;
-  transition: all .9s;
+  transition: all .6s;
 
   &-bar {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    
     display: flex;
+    &:hover .navigation__link {
+      opacity: 0.3;
+    }
+
+    &:hover .navigation__link--mod{
+      opacity: 0.3;
+    }
+
+    & .navigation__link:hover {
+      opacity: 1;
+      color: white !important;
+    }
+
+    & .navigation__link--mod:hover {
+      opacity: 1;
+      color: black !important;
+    }
   }
 
   &__container {
-    max-width: 1200px;
+    width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

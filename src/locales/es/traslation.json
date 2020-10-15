@@ -1,0 +1,30 @@
+{
+  "title": "luz, madera, diseño",
+  "navbar": [
+    {
+      "itemName": "somos",
+      "id": 1,
+      "url": "/we-are"
+    },
+    {
+      "itemName": "nuestar lamparas",
+      "id": 2,
+      "url": "/our-lapms"
+    },
+    {
+      "itemName": "lagubia a medida",
+      "id": 3,
+      "url": "/bespoken-lagubia"
+    },
+    {
+      "itemName": "donde comprar?",
+      "id": 4,
+      "url": "/where-i-can-buy"
+    },
+    {
+      "itemName": "contacto",
+      "id": 5,
+      "url": "/contact-us"
+    }
+  ]
+}

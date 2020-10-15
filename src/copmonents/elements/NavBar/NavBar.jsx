@@ -3,31 +3,34 @@ import NavItem from "../NavBar/NavItem/NavItem";
 import { Link } from "react-router-dom";
 import "./NavBar.scss";
 
+import { withTranslation } from 'react-i18next'
 
-export default class NavBar extends Component {
+
+class NavBar extends Component {
   state = {
-    navbar: [
-      { itemName: "we are", id: 1, url: "/we-are" },
-      { itemName: "our lamps", id: 2, url: "/our-lapms" },
-      { itemName: "bespoken lagubia", id: 3, url: "/bespoken-lagubia" },
-      { itemName: "where i can buy?", id: 4, url: "/where-i-can-buy" },
-      { itemName: "contact us", id: 5, url: "/contact-us" },
-    ],
-
     activeColor: "#cccccc",
+    itemClass: "navigation__link",
+    navBackground: "trasparent"
   };
 
   listenToScroll = () => {
     const winScroll = window.pageYOffset
-    if (winScroll > 50) {
-      document.getElementById("navigation").style.background = "#ffffff"
-      this.setState({ activeColor: "#4D4D4D" })
+    if (winScroll > 75) {
+      this.setState({
+        activeColor: "#4D4D4D",
+        itemClass: "navigation__link--mod",
+        navBackground: "#ffffff"
+      })
     }
     else {
-      this.setState({ activeColor: "#cccccc" })
-      document.getElementById("navigation").style.background = "transparent"
+      this.setState({
+        activeColor: "#cccccc",
+        itemClass: "navigation__link",
+        navBackground: "transparent"
+      })
     }
   }
+
 
   componentDidMount() {
     window.addEventListener('scroll', this.listenToScroll)
@@ -39,20 +42,25 @@ export default class NavBar extends Component {
   }
 
   render() {
-    let { sprite } = this.props;
+    let { sprite, changeLanguage, t } = this.props;
+    let navbar = t("navbar", { returnObjects: true })
 
     return (
-      <div className="navigation" id="navigation">
+      <div className="navigation" style={{ background: this.state.navBackground }} >
         <div className="navigation__container">
+          <button onClick={() => changeLanguage('ru')}>ru</button>
+          <button onClick={() => changeLanguage('en')}>en</button>
+          <button onClick={() => changeLanguage('es')}>es</button>
           <Link to="/" onClick={this.scrollLogo} className="logo-img" style={{ fill: this.state.activeColor }} >
             <svg id="logo" >
               <use href={sprite + '#logo'} />
             </svg>
           </Link>
           <ul className="navigation-bar">
-            {this.state.navbar.map((item) => {
+            {navbar.map((item) => {
               return (
                 <NavItem
+                  itemClass={this.state.itemClass}
                   activeColor={this.state.activeColor}
                   itemName={item.itemName}
                   key={item.id}
@@ -68,3 +76,5 @@ export default class NavBar extends Component {
     );
   }
 }
+
+export default withTranslation()(NavBar)
