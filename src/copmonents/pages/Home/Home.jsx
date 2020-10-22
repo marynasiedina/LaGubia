@@ -1,31 +1,25 @@
+
 import React, { Component } from 'react'
-import './WeAre.scss'
+import './Home.scss'
 
 
-export default class WeAre extends Component {
-  state = {
-    opacity: 0
-  }
+export default class Home extends Component {
 
   componentDidMount() {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-    document.title = "we-are"
+    document.title = "LaGubia"
   }
 
   render() {
-    let { t } = this.props
-
-
     return (
-      <div className='we-are' >
+      <div>
         <div className="section">
           <div className="header">
-            <h1 className="main-title" >{t("title")}</h1>
+            <h1 className="main-title"  ></h1>
           </div>
         </div>
         <div className="section">
           <div className="container">
-            <h2 className="title">{t("title")}</h2>
+            <h2 className="title"></h2>
             <p className="section__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, suscipit blanditiis doloribus et illum neque labore pariatur consequatur amet excepturi dolorum numquam ab assumenda laborum doloremque nihil quis non eos.</p>
           </div>
 
@@ -49,6 +43,5 @@ export default class WeAre extends Component {
       </div>
     )
   }
+
 }
-
-

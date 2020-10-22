@@ -22,9 +22,9 @@
       "url": "/where-i-can-buy"
     },
     {
-      "itemName": "contact us",
+      "itemName": "contact",
       "id": 5,
-      "url": "/contact-us"
+      "url": "/contact"
     }
   ]
 }

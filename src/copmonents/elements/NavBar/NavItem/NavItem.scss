@@ -9,7 +9,7 @@
 }
 
 .navigation__link, .navigation__link--mod {
-  padding: 0 40px;
+
   display: inline-block;
   width: inherit;
   height: inherit;
@@ -19,5 +19,13 @@
   color: $grey;
   transition: 0.9s;
   cursor: pointer;
+}
 
+.navigation__link.active {
+  color: $lightGrey;
+  transition: .9s;
+}
+
+.navigation__link.active.navigation__link--mod {
+  color: $darkGrey;
 }

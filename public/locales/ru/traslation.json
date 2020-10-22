@@ -1,3 +1,30 @@
 {
-  "title": "свет, дерево и дизайн"
+  "title": "свет, дерево, дизайн",
+  "navbar": [
+    {
+      "itemName": "мы",
+      "id": 1,
+      "url": "/we-are"
+    },
+    {
+      "itemName": "наши лампы",
+      "id": 2,
+      "url": "/our-lapms"
+    },
+    {
+      "itemName": "под заказ",
+      "id": 3,
+      "url": "/bespoken-lagubia"
+    },
+    {
+      "itemName": "где купить?",
+      "id": 4,
+      "url": "/where-i-can-buy"
+    },
+    {
+      "itemName": "контакты",
+      "id": 5,
+      "url": "/contact"
+    }
+  ]
 }

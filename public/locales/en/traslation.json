@@ -1,3 +1,30 @@
 {
-  "title": "light, wood &#38; design"
+  "title": "light, wood & design",
+  "navbar": [
+    {
+      "itemName": "we are",
+      "id": 1,
+      "url": "/we-are"
+    },
+    {
+      "itemName": "our lamps",
+      "id": 2,
+      "url": "/our-lapms"
+    },
+    {
+      "itemName": "bespoken lagubia",
+      "id": 3,
+      "url": "/bespoken-lagubia"
+    },
+    {
+      "itemName": "where i can buy?",
+      "id": 4,
+      "url": "/where-i-can-buy"
+    },
+    {
+      "itemName": "contact",
+      "id": 5,
+      "url": "/contact"
+    }
+  ]
 }

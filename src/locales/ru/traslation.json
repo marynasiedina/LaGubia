@@ -1,5 +1,5 @@
 {
-  "title": "свет, дерево и дизайн",
+  "title": "свет, дерево, дизайн",
   "navbar": [
     {
       "itemName": "мы",
@@ -24,7 +24,7 @@
     {
       "itemName": "контакты",
       "id": 5,
-      "url": "/contact-us"
+      "url": "/contact"
     }
   ]
 }

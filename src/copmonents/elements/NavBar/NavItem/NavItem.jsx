@@ -5,10 +5,10 @@ import "../NavItem/NavItem.scss"
 
 export default class NavItem extends Component {
   render() {
-    let { itemName, url, activeColor, itemClass } = this.props;
+    let { itemName, url } = this.props;
     return (
       <li className="navigation__item">
-        <NavLink className={itemClass} activeStyle={{ color: activeColor }} to={url}>
+        <NavLink className="navigation__link" to={url}>
           {itemName}
         </NavLink>
       </li>
